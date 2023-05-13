@@ -3,7 +3,6 @@
 //  execute queries, and retrieve data.
 import mysql from 'mysql';
 const dotenv = require('dotenv');
-
 dotenv.config();
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -11,7 +10,6 @@ const connection = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: 'budget_database'
 });
-
 export const connectToDatabase = () => {
     connection.connect((err) => {
         if (err) {

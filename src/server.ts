@@ -1,7 +1,11 @@
-// server.ts
-// This file sets up your Express.js server and handles routing and middleware configuration.
+// This file sets up the Express.js server and handles routing and middleware configuration.
 
-import express from 'express';
+const express = require('express');
+import { connectToDatabase } from '../dist/db.js';
+import { testDatabaseConnection } from '../dist/db.js';
+
+connectToDatabase();
+testDatabaseConnection();
 
 const app = express();
 const port = 3000;
@@ -14,5 +18,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log('Server is listening on port ${port}');
+	console.log(`Server is listening on port ${port}`);
 });
