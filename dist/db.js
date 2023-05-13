@@ -11,6 +11,7 @@ const connection = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: 'budget_database'
 });
+
 export const connectToDatabase = () => {
     connection.connect((err) => {
         if (err) {
