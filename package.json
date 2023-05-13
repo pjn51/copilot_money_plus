@@ -1,0 +1,29 @@
+{
+  "name": "copilot_money_plus",
+  "version": "1.0.0",
+  "description": "Additional functionality that rests on top of the data produced by the Copilot Money application.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjn51/copilot_money_plus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjn51/copilot_money_plus/issues"
+  },
+  "homepage": "https://github.com/pjn51/copilot_money_plus#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}

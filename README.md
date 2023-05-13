@@ -5,7 +5,7 @@ Additional functionality that rests on top of the data produced by the Copilot M
 ## Backend server
 A backend server using Express.js to handle HTTP requests and serve the web application
 
-- server.ts: This file sets up your Express.js server and handles routing and middleware configuration.
+- server.mjs: This file sets up your Express.js server and handles routing and middleware configuration.
 
 ## Database Connection
 Establishes a connection to your MySQL database and handle data retrieval and manipulation.
