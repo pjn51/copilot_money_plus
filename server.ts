@@ -2,8 +2,8 @@
 // This file sets up your Express.js server and handles routing and middleware configuration.
 
 import express from 'express';
-import { connectToDatabase } from './db.js';
-import { testDatabaseConnection } from './db.js';
+import { connectToDatabase } from './dist/db.js';
+import { testDatabaseConnection } from './dist/db.js';
 
 connectToDatabase();
 testDatabaseConnection();
